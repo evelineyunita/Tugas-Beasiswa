@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='main.js'></script>
+</head>
+<body>
+  <div class="container">
+    <div class="card mt-3"> 
+      <div class="row no-gutters">
+    <!--      <div class="col-md-12"> -->
+          <div class="col-md-3">
+           <img src="https://akuntansiunsam.com/wp-content/uploads/2018/10/cropped-icon-student.png" 
+   class="rounded-circle" height="200pt" width="200pt" alt="...">
+          </div>
+      <body>
+        <style type="text/css">
+          .satu {
+          font-size: 24pt;
+          }
+          .dua {
+          font-size: 16pt;
+          }
+       </style>
+        
+  <h1 span class="judul"> HASIL BEASISWA</h1>
+  
+              </p>
+      
+   <div class="col-md-8 text-black rounded m-2"> 
+  <p class="dua text-left mt-4">
+          Nama : Eveline Yunita
+         </p>
+        <p class="dua text-left mt-4">
+           NIM : 201701055
+            </p>
+          <p class="dua text-left">
+              Email : evelineyunita73@gmail.com
+             </p>
+             <p class="dua text-left">
+                 Phone :  081273647584
+                   </p>  
+               <p class="dua text-left">
+                Alamat : Perumahan Pabuaran Indah No 41
+                 </p>
+          </div>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card text-black bg-danger mb-3" style="max-width: 42rem;"></div>
+      <div class="card-body">
+        <h5 class="card-header">Nilai Rata-Rata</h5>
+        <p class="card-text">
+        <div id="utulis1"></div> 
+        <div id="utulis2"></div>
+        <div id="upraktek"></div>
+        <div id="nilaiujian"></div>
+        </p>
+  <p class="card-text"><div id="tulis1"></div> </p>
+      </div>
+    </div>
+  
+    <div class="card">
+          <div class="card text-black bg-danger mb-3" style="max-width: 42rem;"></div>
+      <div class="card-body">
+        <h5 class="card-header">Score Toefl</h5>
+        <p class="card-text">
+        <h4><div id="toefl1"></div></h4>
+        <div id="toefl"></div></p>
+      </div>
+    </div>
+  
+    <div class="card">
+          <div class="card text-black bg-danger mb-3" style="max-width: 42rem;"></div>
+      <div class="card-body">
+        <h5 class="card-header">Status Memperoleh Beasiswa</h5>
+        <p class="card-text">
+          <h5><div id="nilai"></div></h5>
+              <div id="beasiswa"></div> </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  var ujiantulis1= document.getElementById("utulis1");
+var ujiantulis2 = document.getElementById("utulis2");
+var ujianpraktek = document.getElementById("upraktek");
+var hasilujian  = document.getElementById("nilaiujian");
+
+var tulis1 = 70;
+var tulis2 = 85;
+var praktek = 95;
+var nilaiujian = (tulis1 + tulis2 + praktek) / 3;
+
+ujiantulis1.innerHTML = "Nilai Ujian Tertulis 1 : " + tulis1;
+ujiantulis2.innerHTML = "Nilai Ujian Tertulis 2 : " + tulis2;
+ujianpraktek.innerHTML = "Nilai Ujian Praktek : " + praktek;
+hasilujian.innerHTML = "Nilai Rata-rata Ujian : " + nilaiujian;
+
+var nilaitoefl= document.getElementById("toefl");
+var scoretoefl= document.getElementById("toefl1");
+var toefl = 460;
+var toefl1 = 460;
+
+
+if(toefl >= 500){
+ nilaitoefl.innerHTML = "Nilai 100";
+}
+else if(toefl > 450){
+  nilaitoefl.innerHTML = "Nilai 80";
+}
+else if(toefl < 450){
+  nilaitoefl.innerHTML = "Nilai 50";
+}
+
+scoretoefl.innerHTML = "Score : " + toefl1;
+
+var statusbeasiswa= document.getElementById("beasiswa");
+
+var nilaitoefl = 80;
+var beasiswa = (nilaiujian + nilaitoefl) / 2;
+
+var statusbsw= document.getElementById("nilai");
+
+var nilai= 80 
+if(nilai >= 90){
+ statusbsw.innerHTML = "LULUS";
+}
+else if(nilai < 90){
+  statusbsw.innerHTML = "TIDAK LULUS";
+}
+statusbeasiswa.innerHTML = "Nilai : " + beasiswa;
+
+</script>
+
+
+</body>
+</html>
